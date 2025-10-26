@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Publish Quiz — Live Quiz</title>
+  <link rel="stylesheet" href="publish.css"/>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="wrap">
+    <a class="back" href="dashboard.html">← Back</a>
+    <div class="panel">
+      <h2>Publish Quiz</h2>
+      <p>Select a saved quiz to publish and generate a PIN players can use to join.</p>
+
+      <select id="quizSelect"></select>
+      <div class="options">
+        <button id="publishBtn">Publish & Generate PIN</button>
+        <button id="revokeBtn">Revoke PIN</button>
+      </div>
+
+      <div id="pinArea" class="pinarea" style="display:none">
+        <h3>Active PIN</h3>
+        <p id="pinDisplay" class="pin">000000</p>
+        <p class="small">Share this PIN with players to join the quiz in Player Room.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="publish.js"></script>
+</body>
+</html>

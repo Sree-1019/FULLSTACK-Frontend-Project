@@ -1,0 +1,60 @@
+body,html{
+    margin:0;
+    height:100%;
+    font-family:Inter,system-ui;
+}
+.bg{
+    position:fixed;
+    inset:0;
+    background-image:url('history.avif');
+    background-size:cover;
+    filter:brightness(.55);
+}
+.bg::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg, rgba(2,2,6,0.3), rgba(197, 197, 213, 0.5));
+}
+.wrap{
+    position:relative;
+    z-index:1;
+    padding:28px;
+    display:flex;
+    justify-content:center;
+}
+.panel{
+    width:780px;
+    background:rgba(5, 5, 7, 0.5);
+    color:#eaf6ff;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,0.03);
+}
+#hostedList,#playedList{
+    margin-top:10px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.item{
+    padding:12px;
+    border-radius:10px;
+    background:rgba(10,10,14,0.85);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:1px solid rgba(255,255,255,0.02);
+}
+.item .meta{
+    color:#9fbccd;
+    font-size:13px;
+}
+.btn{
+    padding:8px 10px;
+    border-radius:8px;
+    background:linear-gradient(90deg,#6f9cff,#43e3ff);
+    color:#041028;
+    text-decoration:none;
+    font-weight:700;
+}

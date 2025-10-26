@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Host a Quiz — Live Quiz</title>
+  <link rel="stylesheet" href="host-quiz.css"/>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="container">
+    <header>
+      <h1>Host a Quiz</h1>
+      <a href="dashboard.html" class="back">← Dashboard</a>
+    </header>
+
+    <div class="templates">
+      <div class="card">
+        <h3>Multiple Choice</h3>
+        <p>Questions with multiple selectable options.</p>
+        <a class="start" href="create-quiz.html?type=mcq">Select</a>
+      </div>
+
+      <div class="card">
+        <h3>True / False</h3>
+        <p>Simple true or false type questions.</p>
+        <a class="start" href="create-quiz.html?type=tf">Select</a>
+      </div>
+
+      <div class="card">
+        <h3>Short Answer</h3>
+        <p>Players submit short text answers.</p>
+        <a class="start" href="create-quiz.html?type=short">Select</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="host-quiz.js"></script>
+</body>
+</html>

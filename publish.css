@@ -1,0 +1,77 @@
+body,html{
+    margin:0;
+    height:100%;
+    font-family:Inter,system-ui;
+}
+.bg{
+    position:fixed;
+    inset:0;
+    background-image:url('quiz copy.jpg');
+    background-size:cover;
+    filter:brightness(1.5);
+}
+.bg::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg, rgba(3,3,6,0.3), rgba(6,6,12,0.9));
+}
+.wrap{
+    position:relative;
+    z-index:1;
+    padding:32px;
+    display:flex;
+    justify-content:center;
+}
+.panel{
+    width:640px;
+    background:rgba(44, 44, 117, 0.88);
+    color:#eaf6ff;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,0.03);
+}
+select{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    background:#0f1114;
+    color:#eaf6ff;
+    border:1px solid rgba(255,255,255,0.04);
+    margin-top:10px;
+}
+.options{
+    display:flex;
+    gap:12px;
+    margin-top:14px;
+}
+button{
+    padding:10px 12px;
+    border-radius:8px;
+    border:none;
+    background:linear-gradient(90deg,#6f9cff,#43e3ff);
+    color:#061028;
+    cursor:pointer;
+    font-weight:700;
+}
+.revoke{
+    background:transparent;
+    border:1px solid rgba(255,255,255,0.05);
+    color:#cfe8ff;
+}
+.pinarea{
+    margin-top:16px;
+    background:rgba(10,10,14,0.8);
+    padding:14px;
+    border-radius:8px;
+}
+.pin{
+    font-size:26px;
+    font-weight:800;
+    color:#cfe8ff;
+    letter-spacing:6px;
+}
+.small{
+    color:#9fbccd;
+    font-size:13px;
+}

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+*{
+  box-sizing:border-box;
+}
+body,html{
+  height:100%;
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+}
+.bg{
+  position:fixed;
+  inset:0;
+  background-image: url('https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1600&q=80');
+  background-size:cover;
+  background-position:center;
+   filter:grayscale(10%) contrast(0.85) saturate(0.8);
+}
+.bg::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(0,0,0,0.6), rgba(5,5,10,0.8));
+  mix-blend-mode:multiply;
+}
+.center{
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  z-index:1;
+}
+.card{
+  width:360px;
+  padding:28px;
+  border-radius:14px;
+  background:linear-gradient(180deg, rgba(12,12,18,0.84), rgba(8,8,12,0.92));
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  color:#e8eef6;
+  text-align:center;
+  border:1px solid rgba(255,255,255,0.04);
+}
+.card h1{
+  margin:0;
+  font-size:28px;
+  letter-spacing:1px;
+}
+.card .sub{
+  margin:6px 0 18px;
+  color:#9fb0c8;
+  font-size:13px;
+}
+.card input{
+  width:100%;
+  padding:12px 14px;
+  margin:8px 0;
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,0.04);
+  background:#151619;
+  color:#ecf6ff;
+  outline:none;
+  font-size:14px;
+}
+.card input:focus{
+  box-shadow:0 4px 14px rgba(0,120,255,0.08);
+  border-color:rgba(0,150,255,0.14);
+}
+.card button{
+  width:100%;
+  padding:12px;
+  border-radius:8px;
+  border:none;
+  margin-top:10px;
+  font-weight:600;
+  background:linear-gradient(90deg,#1f6feb,#5ac8ff);
+  color:#071029;
+  cursor:pointer;
+  transition:transform .15s ease;
+}
+.card button:hover{
+  transform:translateY(-2px);
+}
+.small{
+  font-size:13px;
+  color:#9fb0c8;
+  margin-top:12px;
+}
+.small a{
+  color:#89d3ff;
+  text-decoration:none;
+  font-weight:600;
+}

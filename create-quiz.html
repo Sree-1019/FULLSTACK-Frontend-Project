@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Create Quiz — Live Quiz</title>
+  <link rel="stylesheet" href="create-quiz.css"/>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="wrap">
+    <a class="back" href="host-quiz.html">← Back</a>
+    <div class="panel">
+      <h2 id="heading">Create Quiz</h2>
+
+      <label>Quiz Title</label>
+      <input id="quizTitle" placeholder="E.g., JavaScript Basics" />
+
+      <label>Quiz Description</label>
+      <textarea id="quizDesc" rows="2" placeholder="Short description"></textarea>
+
+      <hr/>
+
+      <div id="questionArea">
+      </div>
+
+      <div class="controls">
+        <button id="addQ">+ Add Question</button>
+        <button id="saveQuiz">Save Quiz</button>
+        <a class="ghost" href="publish.html">Publish / Generate PIN</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="create-quiz.js"></script>
+</body>
+</html>

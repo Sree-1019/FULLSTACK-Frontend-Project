@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background: url('quiz.jpg') no-repeat center center/cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 0;
+}
+
+.dashboard-container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  color: #cfcfcf;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.btn {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  padding: 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+.btn.secondary {
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+  color: #000;
+}
+
+.btn.secondary:hover {
+  background: linear-gradient(135deg, #ffd200, #f7971e);
+}
+
+.btn.logout {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.btn.logout:hover {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
